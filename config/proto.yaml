@@ -1,0 +1,34 @@
+includes:
+  - headers/data.yaml
+  - headers/device.yaml
+  - headers/misc.yaml
+  - headers/model.yaml
+  - headers/optimizer.yaml
+  - classifiers/Proto.yaml
+
+
+backbone:
+  name: resnet12
+  kwargs:
+    keep_prob: 0.0
+    avg_pool: False
+    is_flatten: False
+    maxpool_last2: True
+
+# backbone:
+#   name: resnet12
+#   kwargs:
+#     keep_prob: 0.0
+
+# backbone:
+#   name: resnet18
+#   kwargs:
+
+# backbone:
+#   name: WRN
+#   kwargs:
+#     depth: 10
+#     widen_factor: 10
+#     dropRate: 0.0
+#     avg_pool: True
+#     is_flatten: True
